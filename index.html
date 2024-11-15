@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thông tin người dùng</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="OIP (1).jpg" alt="Logo " class="logo">
+        <h1 class="slogan">Chào mừng đến với lớp học T2409M</h1>
+        <div class="banner">Mình là thủ quỹ của lớp</div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Mời bạn giới thiệu về bản thân</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">Họ và tên:</label>
+                    <input type="text" id="name" name="name" placeholder="Họ và tên" maxlength="50" required>
+                    <div class="error" id="nameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <div class="error" id="emailError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="text" id="phone" name="phone" placeholder="Số điện thoại" required>
+                    <div class="error" id="phoneError"></div>
+                </div>
+                <div class="form-group">
+                    <label>Giới tính:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" id="male" name="gender" value="Nam" required> Nam</label>
+                        <label><input type="radio" id="female" name="gender" value="Nữ"> Nữ</label>
+                        <label><input type="radio" id="other" name="gender" value="Khác"> Khác</label>
+                    </div>
+                    <div class="error" id="genderError"></div>
+                </div>
+                <div class="form-group">
+                    <label>Sở thích:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="hobbies" value="Thể thao"> Thể thao</label>
+                        <label><input type="checkbox" name="hobbies" value="Phim ảnh"> Phim ảnh</label>
+                        <label><input type="checkbox" name="hobbies" value="Đọc sách"> Đọc sách</label>
+                        <label><input type="checkbox" name="hobbies" value="Âm nhạc"> Âm nhạc</label>
+                        <label><input type="checkbox" name="hobbies" value="Khác"> Khác</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="intro">Giới thiệu bản thân:</label>
+                    <textarea name="intro" id="intro" rows="4" placeholder="Giới thiệu bản thân"></textarea>
+                </div>
+                <button type="submit">Đăng ký</button>
+                <div class="error" id="formError"></div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Tên sinh viên: Bùi Đức Trung</p>
+        <p>Email: yuuichirou67@gmail.com</p>
+        <p>Lớp: T2409M</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
